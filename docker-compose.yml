@@ -1,0 +1,33 @@
+version: "2"
+
+services:
+
+  couchdb-1:
+    container_name: couchdb-1
+    networks: ["vnet"]
+    hostname: couchdb-1.vnet
+    image: local/couchdb
+    ports: ["5984:5984"]
+    environment:
+      - COUCHDB_ADMIN_PASS=$COUCHDB_ADMIN_PASS
+
+  couchdb-2:
+    container_name: couchdb-2
+    networks: ["vnet"]
+    hostname: couchdb-2.vnet
+    image: local/couchdb
+    environment:
+      - COUCHDB_ADMIN_PASS=$COUCHDB_ADMIN_PASS
+
+  couchdb-3:
+    container_name: couchdb-3
+    networks: ["vnet"]
+    hostname: couchdb-3.vnet
+    image: local/couchdb
+    environment:
+      - COUCHDB_ADMIN_PASS=$COUCHDB_ADMIN_PASS
+
+networks:
+  vnet:
+    external:
+      name: vnet
