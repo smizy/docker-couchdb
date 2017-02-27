@@ -47,9 +47,6 @@ docker exec -it couchdb-1 cluster-setup.sh couchdb-1.vnet couchdb-2.vnet couchdb
 * do [Veriy Installation] 
 TODO: Replication often failed.
 
-# rm coordination node
-docker rm -fv couchdb-0
-
 # stop couchdb cluster  
 docker-compose stop
 
