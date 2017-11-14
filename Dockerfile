@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-ENV COUCHDB_VERSION   2.0.0
+ENV COUCHDB_VERSION   2.1.1
 ENV COUCHDB_HOME      /usr/local/couchdb
 ENV COUCHDB_CONF      ${COUCHDB_HOME}/etc
 ENV COUCHDB_DATA      /var/lib/couchdb

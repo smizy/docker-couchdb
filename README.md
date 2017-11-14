@@ -2,7 +2,7 @@
 
 Apache CouchDB docker image based on alpine
 
-Note that this image is unstable and under testing.
+Note that this image is unstable.
 
 ## Cluster setup on single host
 
