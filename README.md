@@ -8,7 +8,7 @@ Note that this image is unstable.
 
 ```
 # build
-docker build -t local/couchdb .
+docker build --build-arg "VERSION=2.x.x" -t local/couchdb .
 
 # network
 docker network create vnet
